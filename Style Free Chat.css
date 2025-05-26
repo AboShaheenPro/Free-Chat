@@ -1,0 +1,99 @@
+html{height: 100%;
+    background-image: linear-gradient(rgb(0, 204, 255), rgb(132, 0, 255));
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0);
+    font-family:"Playwrite DK Loopet", sans-serif, "Roboto", sans-serif, "Ancizar Sans", sans-serif;
+    animation-name: h1;
+    animation-duration: 1s;
+    animation-delay: 500ms ;
+    animation-fill-mode: forwards;
+}
+@keyframes h1 {
+    from{
+        color: rgba(255, 255, 255, 0);
+        position: relative;
+        top: -50px;
+    }
+    to{
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 10px;
+    }
+}
+#d1{
+    width: 0px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 30px;
+    border-radius: 10px;
+    animation-name: d1;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes d1 {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 500px;
+    }
+}
+form{
+    border: solid;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: lab(100% 0.01 -0.01 / 0);
+    background-color: lab(100% 0.01 -0.01 / 0.199);
+}
+#i1,#i2,#i3{
+    position: relative;
+    top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    font-size: 15px;
+    border-color: rgba(255, 255, 255, 0);
+    margin-top: 5px;
+    outline: none;
+    width: 250px;
+    height: 25px;
+    background-color: #ffffff98;
+}
+#i3{
+    width: 150px;
+    font-family:"Nunito", sans-serif;
+    position: relative;
+    top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#i3:hover{
+    transition: 300ms;
+    background-color: rgb(32, 136, 255);
+    color: rgb(255, 255, 255);
+}
+#i2:hover{
+    transition: 300ms;
+    border-color: rgb(36, 32, 255);
+}
+#i1:hover{
+    transition: 300ms;
+    border-color: rgb(36, 32, 255);
+}
+#password{
+    color: #ffffff;
+    margin-left: 130px;
+    position: relative;
+    bottom: 15px;
+    font-size: 13px;
+}
