@@ -1,104 +1,135 @@
-html{height: 100%;
-    background-image: linear-gradient(rgb(0, 204, 255), rgb(132, 0, 255));
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
 }
-h1{
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(0, 183, 255), rgb(111, 0, 255));    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#h3{
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    margin-left: 10px;
+}
+#h1{ 
+    position: relative;
+    top: 10px;   
     text-align: center;
-    font-size: 60px;
-    color: rgba(255, 255, 255, 0);
-    font-family:"Playwrite DK Loopet", sans-serif, "Roboto", sans-serif, "Ancizar Sans", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Playwrite DK Loopet", cursive;
     animation-name: h1;
     animation-duration: 1s;
-    animation-delay: 500ms ;
-    animation-fill-mode: forwards;
 }
 @keyframes h1 {
     from{
-        color: rgba(255, 255, 255, 0);
         position: relative;
-        top: -50px;
+        top: -100px;
     }
     to{
-        color: rgb(255, 255, 255);
         position: relative;
         top: 10px;
     }
 }
-#h3{
-    font-family: "Noto Sans Arabic", sans-serif;
-    color: rgb(255, 255, 255);
-}
 #d1{
-    width: 0px;
-    height: 1px;
-    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 2px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     bottom: 30px;
-    border-radius: 10px;
+    background-color: aliceblue;
     animation-name: d1;
     animation-duration: 1s;
-    animation-delay: 500ms;
-    animation-fill-mode: forwards;
 }
 @keyframes d1 {
     from{
-        width: 0px;
+        width: 0;
     }
     to{
-        width: 500px;
+        width: 300px;
     }
 }
 form{
     border: solid;
     width: 500px;
     height: 300px;
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.267);
+    color: rgba(240, 248, 255, 0);
+    border-radius: 19px;
     margin-left: auto;
     margin-right: auto;
-    border-color: lab(100% 0.01 -0.01 / 0);
-    background-color: lab(100% 0.01 -0.01 / 0.199);
 }
-#i1,#i2,#i3{
-    position: relative;
-    top: 30px;
+#h2{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+#email,#password{
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
-    font-size: 15px;
-    border-color: rgba(255, 255, 255, 0);
-    margin-top: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgba(250, 235, 215, 0);
+    background-color: rgba(255, 255, 255, 0.548);
+    position: relative;
+    top: 10px;
+    width: 400px;
+    transition: 300ms;
+}
+#email:hover,#password:hover{
+    width: 430px;
+    box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
+}
+#email:focus,#password:focus{
     outline: none;
-    width: 250px;
-    height: 25px;
-    background-color: #ffffff98;
 }
-#i3{
-    width: 150px;
-    font-family:"Nunito", sans-serif;
-    position: relative;
-    top: 20px;
-    background-color: rgb(255, 255, 255);
-}
-#i3:hover{
-    transition: 300ms;
-    background-color: rgb(32, 136, 255);
+#a1{
+    font-size: 12px;
     color: rgb(255, 255, 255);
-    width: 170px;
-}
-#i2:hover{
-    transition: 300ms;
-    border-color: rgb(36, 32, 255);
-}
-#i1:hover{
-    transition: 300ms;
-    border-color: rgb(36, 32, 255);
-}
-#password{
-    color: #ffffff;
-    margin-left: 130px;
     position: relative;
-    bottom: 15px;
-    font-size: 13px;
+    left: 190px;
+    bottom: 20px;
+    font-family: "Rubik", sans-serif;
+    transition: 300ms;
+}
+#a2{
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik", sans-serif;
+    transition: 300ms;
+}
+#a1:hover,#a2:hover{
+    color: #0046a1;
+}
+#submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: medium;
+    border-color: rgba(127, 255, 212, 0);
+    position: relative;
+    bottom: 60px;
+    transition: 300ms;
+}
+#submit:hover{
+    background-color: rgb(0, 132, 255);
+    color: blanchedalmond;
+    width: 180px;
+    box-shadow: 1px 1px 10px 7px rgb(46, 154, 255);
 }
