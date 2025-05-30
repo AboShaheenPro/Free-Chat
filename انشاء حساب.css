@@ -1,0 +1,68 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(0, 183, 255), rgb(111, 0, 255));    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#h1{
+    font-family: "Rubik", sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+form{
+    border: solid;
+    width: 500px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: #ffffff4d;
+    color: #00000000;
+}
+#المستخدم,#email,#password{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    width: 250px;
+    height: 25px;
+    border-color: #ffffff00;
+    transition: 200ms;
+    background-color: #ffffffad;
+    font-family: "Rubik", sans-serif;
+}
+#المستخدم:hover,#email:hover,#password:hover{
+    width: 260px;
+    box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
+}
+#المستخدم:focus,#email:focus,#password:focus{
+    outline: none;
+}
+#المستخدم{
+    margin-top: 60px;
+}
+#submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 27px;
+    border-radius: 15px;
+    border-color: #ffffff00;
+    transition: 200ms;
+    font-family: "Rubik", sans-serif;
+}
+#submit:hover{
+    background-color: rgb(0, 119, 255);
+    color: rgb(255, 255, 255);
+    width: 160px;
+    box-shadow: 1px 1px 40px 5px rgb(37, 139, 255);
+}
