@@ -18,18 +18,21 @@ body{
 }
 #h1{ 
     position: relative;
-    top: 10px;   
+    top: -400px;   
     text-align: center;
     font-size: 50px;
     color: rgb(255, 255, 255);
     font-family: "Playwrite DK Loopet", cursive;
     animation-name: h1;
     animation-duration: 1s;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+
 }
 @keyframes h1 {
     from{
         position: relative;
-        top: -100px;
+        top: -400px;
     }
     to{
         position: relative;
@@ -37,7 +40,7 @@ body{
     }
 }
 #d1{
-    width: 300px;
+    width: 0px;
     height: 2px;
     display: block;
     margin-left: auto;
@@ -47,6 +50,8 @@ body{
     background-color: aliceblue;
     animation-name: d1;
     animation-duration: 1s;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
 }
 @keyframes d1 {
     from{
