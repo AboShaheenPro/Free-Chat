@@ -1,140 +1,149 @@
-html,body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-}
-body{
-    min-height: 100vh;
-    background-image: linear-gradient(rgb(0, 183, 255), rgb(111, 0, 255));    
+html{
+    background-image: url(wall.png);
     background-repeat: no-repeat;
+    height: 100%;
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
 }
-#h3{
-    color: #ffffff;
-    font-family: "Rubik", sans-serif;
-    margin-left: 10px;
-}
-#h1{ 
-    position: relative;
-    top: -400px;   
-    text-align: center;
-    font-size: 50px;
+#h31{
     color: rgb(255, 255, 255);
-    font-family: "Playwrite DK Loopet", cursive;
-    animation-name: h1;
-    animation-duration: 1s;
-    animation-delay: 300ms;
-    animation-fill-mode: forwards;
-
+    font-family: "Tajawal", sans-serif;
 }
-@keyframes h1 {
-    from{
+#h11{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 55px;
+    font-family: "Playwrite DK Loopet", cursive;
+    position: relative;
+    top: 10px;
+    animation-name: h11;
+    animation-duration: 500ms;
+}
+@keyframes h11 {
+    0%{
         position: relative;
-        top: -400px;
+        top: -100px;
     }
-    to{
+    100%{
         position: relative;
         top: 10px;
-    }
-}
-#d1{
-    width: 0px;
-    height: 2px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    bottom: 30px;
-    background-color: aliceblue;
-    animation-name: d1;
-    animation-duration: 1s;
-    animation-delay: 600ms;
-    animation-fill-mode: forwards;
-}
-@keyframes d1 {
-    from{
-        width: 0;
-    }
-    to{
-        width: 300px;
     }
 }
 form{
     border: solid;
     width: 500px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.267);
-    color: rgba(240, 248, 255, 0);
-    border-radius: 19px;
+    height: 570px;
+    border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
-}
-#h2{
-    color: #ffffff;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
+    background: rgba(255, 255, 255, 0.082); /* لون شفاف */
+    backdrop-filter: blur(8px);           /* ضبابية الخلفية */
+    border: 1px solid rgba(255, 255, 255, 0.212); /* حد خفيف شبه شفاف */
+    box-shadow: 0px 0px 10px rgb(0, 0, 0)
 }
 #email,#password{
+    width: 300px;
+    height: 25px;
+    border-color: rgba(240, 248, 255, 0);
+    border-radius: 14px;
+    position: relative;
+    top: 20px;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 20px;
-    border-radius: 10px;
-    border-color: rgba(250, 235, 215, 0);
-    background-color: rgba(255, 255, 255, 0.548);
-    position: relative;
-    top: 10px;
-    width: 400px;
-    transition: 300ms;
-}
-#email:hover,#password:hover{
-    width: 430px;
-    box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
-}
-#email:focus,#password:focus{
+    font-size: 18px;
+    transition:500ms;
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.041);
     outline: none;
 }
-#a1{
-    font-size: 12px;
-    color: rgb(255, 255, 255);
-    position: relative;
-    left: 190px;
-    bottom: 20px;
-    font-family: "Rubik", sans-serif;
-    transition: 300ms;
+#email:hover,#password:hover{
+    transition:500ms;
+    width: 350px;
+    box-shadow: 0px 5px 10px rgb(255, 255, 255);
 }
-#a2{
-    font-size: 12px;
-    position: relative;
-    bottom: 20px;
-    left: 50px;
-    color: rgb(255, 255, 255);
-    font-family: "Rubik", sans-serif;
-    transition: 300ms;
+#l1,#l2{
+    color: rgb(255, 255, 255);   
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Inter", sans-serif;
 }
-#a1:hover,#a2:hover{
-    color: #0046a1;
-}
-#submit{
+#submit1{
+    width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    width: 150px;
-    height: 30px;
+    margin-top: 30px;
+    height: 35px;
+    border-color: rgba(240, 248, 255, 0);
     border-radius: 20px;
-    font-size: medium;
-    border-color: rgba(127, 255, 212, 0);
-    position: relative;
-    bottom: 60px;
-    transition: 300ms;
+    font-size: 20px;
+    font-family: "Tajawal", sans-serif;
+    transition: 400ms;
 }
-#submit:hover{
-    background-color: rgb(0, 132, 255);
-    color: blanchedalmond;
-    width: 180px;
-    box-shadow: 1px 1px 10px 7px rgb(46, 154, 255);
+#submit2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    width: 250px;
+    height: 35px;
+    border-color: rgba(240, 248, 255, 0);
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "Tajawal", sans-serif;
+    transition: 400ms;
+}
+#submit1:hover{
+    box-shadow: 0px 5px 10px rgb(255, 255, 255);
+    width: 350px;
+}
+#submit2:hover{
+    box-shadow: 0px 5px 10px rgb(255, 255, 255);
+    width: 300px;
+}
+#h2{
+    text-align: center;
+    margin-top: 1px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: "Tajawal", sans-serif;
+}
+#hr{
+    width: 400px;
+}
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #email, #password {
+        width: 90%;
+    }
+
+    #submit1, #submit2 {
+        width: 90%;
+    }
+
+    #email:hover, #password:hover, #submit1:hover, #submit2:hover {
+        width: 95%;
+    }
+
+    #h11 {
+        font-size: 35px;
+    }
+
+    #h31, #h2, #l1, #l2 {
+        font-size: 18px;
+    }
+
+    #hr {
+        width: 90%;
+    }
 }
