@@ -19,16 +19,6 @@ html{
     animation-name: h11;
     animation-duration: 500ms;
 }
-@keyframes h11 {
-    0%{
-        position: relative;
-        top: -100px;
-    }
-    100%{
-        position: relative;
-        top: 10px;
-    }
-}
 form{
     border: solid;
     width: 500px;
@@ -36,9 +26,9 @@ form{
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(255, 255, 255, 0.082); /* لون شفاف */
-    backdrop-filter: blur(8px);           /* ضبابية الخلفية */
-    border: 1px solid rgba(255, 255, 255, 0.212); /* حد خفيف شبه شفاف */
+    background: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.212);
     box-shadow: 0px 0px 10px rgb(0, 0, 0)
 }
 #email,#password{
@@ -124,25 +114,27 @@ form{
     }
 
     #email, #password {
-        width: 90%;
+        width: 70%;
     }
 
     #submit1, #submit2 {
-        width: 90%;
+        width: 70%;
     }
 
     #email:hover, #password:hover, #submit1:hover, #submit2:hover {
-        width: 95%;
+        width: 75%;
     }
 
     #h11 {
-        font-size: 35px;
+        font-size: 50px;
     }
 
-    #h31, #h2, #l1, #l2 {
+    #h31, #h2{
         font-size: 18px;
     }
-
+     #l1, #l2{
+        font-size: 25px;
+     }
     #hr {
         width: 90%;
     }
